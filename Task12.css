@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: burlywood;
+}
+
+header {
+    background-color: #333;
+    color: burlywood;
+    text-align: center;
+    padding: 1em 0;
+}
+
+main {
+    padding: 20px;
+}
+
+table.color-table {
+    width: 70%;
+    border-collapse: collapse;
+    margin: 0 auto; /* Center the table */
+    text-align: center;
+}
+
+table.color-table th, table.color-table td {
+    border: 1px solid burlywood;
+    padding: 25px;
+    color: #fff; /* Text color for better contrast with backgrounds */
+    font-size: 16px;
+}
+
+table.color-table th {
+    background-color: #333;
+    color: burlywood;
+}
+
+footer {
+    background-color: #333;
+    color: burlywood;
+    text-align: center;
+    padding: 1em 0;
+}

@@ -1,0 +1,17 @@
+<html>
+    <input>
+        <button onclick="setItem()">setItem</button>
+        <button onclick="getItem()">getItem</button>
+        <p id="output"></p>
+        <script>
+            const output= document.getElementById(output);
+            function setItem(){
+            sessionStorage.setItem("username","Raju");
+        }
+        function getItem(){
+            sessionStorage.getItem("username");
+            output.innerHTML="username:"+ username;
+        }
+        </script>
+    </body>
+</html>

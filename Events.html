@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <h1>Events in Html</h1>
+    <body ononline="fuction()">
+    <input type="text" name="text" onchange="fuction1()">
+    <button onclick="fuction2()">submit</button>
+    <p ondblclick="fuction3()">click on doubleclick</p>
+    <p draggable="true" ondrag="function4()">click on this to drag the fuction </p>
+    <script>
+        function fuction1(){
+            alert("the input value has changed");
+        }
+        function fuction2(){
+            alert("this site can't open now ");
+        }
+        function fuction3(){
+            alert("when you click on doubleclick on this it is it will alert the message ");
+        }
+        function function4(){
+            alert("when click on this drag it drag the text from one place to onother place");
+        }
+        function offline(){
+            alert("it works offline mode ");
+            console.log("online mode");
+        }
+    </script>
+</body>
+</html>

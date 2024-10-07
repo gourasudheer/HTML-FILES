@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+</head>
+<style>
+    body{
+        background-color: lightblue;
+        text-align: center;
+    }
+</style>
+<body>
+    <h2>Login Form</h2>
+    <label for="username">Username:</label>
+    <input type="text" id="username" placeholder="Enter Username"><br><br>
+    <label for="password">Password:</label>
+    <input type="password" id="password" placeholder="Enter Password"><br><br>
+    <button onkeydown="login()" style="background-color:green;">Login</button>
+    <p id="message"></p>
+    <script>
+        function login() {
+            const correctUsername = "Sudheer";
+            const correctPassword = "Sudheer@111";
+            const enteredUsername = document.getElementById("username").value;
+            const enteredPassword = document.getElementById("password").value;
+            const messageElement = document.getElementById("message");
+            if (enteredUsername === correctUsername && enteredPassword === correctPassword) {
+                alert("login success");
+                messageElement.textContent = "Login success";
+                messageElement.style.color = "green";
+            } else if (enteredUsername === correctUsername) {
+                alert("incorrect password");
+                messageElement.textContent = "Incorrect password";
+                messageElement.style.color = "red";
+            } else {
+                alert("incorrect username or password");
+                messageElement.textContent = "Incorrect username or password";
+                messageElement.style.color = "red";
+            }
+        }
+    </script>
+</body>
+</html>

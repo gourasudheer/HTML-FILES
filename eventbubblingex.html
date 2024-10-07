@@ -1,0 +1,51 @@
+<html>
+    <style>
+        div {
+            color:black;
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            flex-direction: column;
+        }
+        #Trees {
+            background-color: aquamarine;
+            width: 300px;
+            height: 300px;
+            font-family: sans-serif;
+        }
+        #leaves {
+            background-color: bisque;
+            width: 200px;
+            height: 200px;
+            font-family: sans-serif;
+        }
+        #fruits {
+            background-color: sandybrown;
+            width: 100px;
+            height: 100px;
+            font-family: sans-serif;
+        }
+    </style>
+    <body>
+        <div id="Trees">TREES
+        <div id="leaves">LEAVES
+        <div id="fruits">FRUITS</div>
+        </div>
+    </div>
+    </body>
+    <script>
+        const Trees = document.getElementById("Trees");
+        const leaves = document.getElementById("leaves");
+        const fruits = document.getElementById("fruits");
+        Trees.addEventListener("click",(e)=>{
+            console.log("Trees");
+        });
+        leaves.addEventListener("click",(e)=>{
+            console.log("leaves");
+        });
+        fruits.addEventListener("click",(e)=>{
+            console.log("fruits");
+        });
+    </script>
+    </body>
+</html>

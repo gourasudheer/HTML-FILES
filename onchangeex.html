@@ -1,0 +1,14 @@
+<html>
+    <h2>Change Event</h2>
+    <body>
+       <input type="text" id="Myinput" onchange="changeevent()">
+       <p id="output"></p>
+       <script>
+        function changeevent(){
+            alert("Event occurs");
+            var inputvalue = document.getElementById("Myinput").value;
+            document.getElementById("output").innerHTML = "!!" + inputvalue;
+        }
+       </script>
+    </body>
+</html>
